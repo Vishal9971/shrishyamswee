@@ -1,0 +1,179 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  .header {
+    min-height: 100vh;
+    width: 100vw;
+    background: url(/images/hero-img-2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    .section-1 {
+      height: 20vh;
+      width: 100vw;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .img-01 {
+        width: 10em;
+        height: 10vh;
+        border-radius: 50%;
+      }
+      .ul-list {
+        display: flex;
+        list-style: none;
+
+        font-size: 20px;
+        display: flex;
+        color: white;
+        .list-item {
+          margin-right: 30px;
+          padding: 10px;
+          background-color: rgba(3, 6, 6, 0.4);
+        }
+      }
+    }
+  }
+  .section-2 {
+    text-align: center;
+    /* display: flex; */
+    min-height: 90vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(244, 218, 112, 0.9), rgba(204, 218, 118, 0.8)),
+      url(/images/background-img-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    .sec-2-h2 {
+      text-align: center;
+      font-size: 30px;
+      padding-top: 40px;
+    }
+    .eksath {
+      display: flex;
+      .aboutus {
+        .about-h1 {
+          font-size: 32px;
+          text-align: center;
+          padding: 20px;
+        }
+        .about-p {
+          font-size: 18px;
+          color: black;
+          text-align: justify;
+        }
+        width: 40%;
+        padding: 5%;
+      }
+      .about-img {
+        width: 40%;
+        padding: 5%;
+
+        .grid-img {
+          .img-grid-items {
+            width: 250px;
+            height: 200px;
+          }
+        }
+      }
+    }
+  }
+  .section-3 {
+    width: 100vw;
+    min-height: 90vh;
+    background: linear-gradient(rgba(244, 218, 112, 0.9), rgba(204, 218, 118, 0.8)), url(/images/background-img-1.jpg);
+    text-align: center;
+    margin: 0px;
+    .drag-menu {
+      margin: auto;
+      position: relative;
+      top: 100px;
+      width: 70vw;
+      background-color: white;
+      min-height: 60vh;
+      .menu-h2 {
+        font-size: 30px;
+        padding: 5%;
+      }
+      .menu-item {
+        display: flex;
+        justify-content: space-evenly;
+        .a-menu {
+          color: white;
+          text-decoration: none;
+          .img-menu {
+            background-image: url(/images/cake-1.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            height: 200px;
+            width: 200px;
+            .square {
+              display: none;
+              height: 150px;
+              width: 150px;
+              border: 1px solid white;
+              position: relative;
+
+              top: 12%;
+              left: 12%;
+              .menu-h2-01 {
+                padding-top: 40%;
+                font-size: 22px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #hover-menu-img:hover {
+    background-image: linear-gradient(rgba(244, 218, 112, 0.9), rgba(244, 218, 118, 0.8)), url(/images/cake-1.jpg);
+    .square {
+      display: block;
+    }
+  }
+  .section-4 {
+    width: 100vw;
+    height: 90vh;
+    background: linear-gradient(rgba(253, 76, 53, 0.9), rgba(242, 67, 36, 0.8)), url(/images/hero-img.jpg);
+    .contact-us {
+      height: 40vh;
+      width: 35vw;
+      background-color: white;
+      display: block;
+      position: relative;
+      left: 200px;
+      top: 150px;
+      .contact-h2 {
+        padding: 10%;
+        padding-bottom: 7%;
+        font-size: 30px;
+      }
+      .contact-p {
+        padding-left: 10%;
+        padding-bottom: 2%;
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+/* //------------------CAKES---------------- */
+
+.cake-header {
+  .section-cake {
+    width: 70vw;
+    height: 70vmin;
+    margin: 4vh auto;
+    background-color: rgba(241, 240, 240, 0.7);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    .cake-img {
+      width: 300px;
+      height: 300px;
+      /* gap: 20px; */
+      margin: 10px;
+    }
+  }
+}
