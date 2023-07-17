@@ -99,7 +99,7 @@ body {
       .menu-item {
         display: flex;
         flex-wrap: wrap;
-        min-height: auto;
+/*         min-height: auto; */
         justify-content: space-evenly;
         .a-menu {
           color: white;
