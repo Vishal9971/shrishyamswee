@@ -143,7 +143,79 @@ body {
         }
       }
     }
+    #cake-div-form {
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 190%;
+      left: 10%;
+
+      .cake {
+        text-align: center;
+        min-height: 70vh;
+        width: 80vw;
+        margin: 100px auto;
+        background-color: bisque;
+        z-index: -1000;
+        /* display: none; */
+
+        .danger {
+          background-color: red;
+          position: relative;
+          top: 10px;
+          /* left: 10px; */
+          height: 20px;
+          width: 20px;
+          padding: 2px;
+        }
+        .cake-h2 {
+          padding: 30px;
+          padding-left: 80px;
+          padding-right: 80px;
+          font-size: 28px;
+        }
+        .cake-div {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          .cake-div-img {
+            cursor: pointer;
+            .cake-img {
+              padding-top: 20px;
+              height: 230px;
+              width: 250px;
+            }
+          }
+        }
+      }
+    }
+    .chocolateCake-div {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      /* margin: auto; */
+      z-index: -100;
+      position: absolute;
+      top: 190%;
+      left: 10%;
+      background-color: bisque;
+      width: 80vw;
+      min-height: 80vh;
+      padding-top: 50px;
+      .img-cake-01 {
+        width: 250px;
+        height: 250px;
+        padding: 10px;
+      }
+      .danger {
+        background-color: red;
+        padding: 10px;
+        position: relative;
+        bottom: 280px;
+      }
+    }
   }
+
   #hover-menu-img:hover {
     background-image: linear-gradient(rgba(244, 218, 112, 0.9), rgba(244, 218, 118, 0.8)), url(/images/cake-1.jpg);
     .square {
@@ -171,6 +243,9 @@ body {
         padding-left: 10%;
         padding-bottom: 2%;
         font-size: 22px;
+      }
+      .icon {
+        cursor: pointer;
       }
     }
   }
@@ -286,5 +361,15 @@ body {
     font-size: 12px;
     display: flex;
     flex-wrap: wrap;
+  }
+  #img-cake-01 {
+    width: 130px;
+    height: 130px;
+    padding: 5px;
+  }
+  #cake-img {
+    width: 130px;
+    height: 130px;
+    margin: 5px;
   }
 }
