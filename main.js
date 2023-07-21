@@ -41,3 +41,25 @@ btnDanger.addEventListener('click', function () {
   chocoCake.style.display = 'none';
   mainCake.style.display = 'block';
 });
+
+let fruitDriedCake = document.querySelector('#fruit-cake');
+let fruitCake = document.querySelector('#fruitCake-div');
+fruitDriedCake.addEventListener('click', function () {
+  if (fruitCake.style.display === 'none') {
+    fruitCake.style.display = 'block';
+    fruitCake.style.zIndex = 2000;
+  } else {
+    fruitCake.style.display = 'none';
+  }
+});
+
+let snackDiv = document.querySelector('.sk-div');
+let snackForm = document.querySelector('#snack-div-form');
+snackDiv.addEventListener('click', function () {
+  if (snackForm.style.display === 'none') {
+    snackForm.style.display = 'block';
+    snackForm.style.zIndex = 2000;
+  } else {
+    snackForm.style.display = 'none';
+  }
+});
