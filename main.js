@@ -1,3 +1,13 @@
+// let form = document.querySelector('form');
+let allForm = document.querySelectorAll('form');
+
+allForm.forEach((form) => {
+  form.addEventListener('submit', function (e) {
+    console.log(e);
+    e.preventDefault();
+  });
+});
+
 let arr = ['/images/hero-img-2.jpg', '/images/hero-img-1.jpg'];
 let index = 0;
 setInterval(function () {
@@ -8,19 +18,12 @@ setInterval(function () {
 
 let cakeDiv = document.querySelector('.ck-div');
 let mainCake = document.querySelector('#cake-div-form');
-let cross = document.querySelector('.danger');
+
 cakeDiv.addEventListener('click', function () {
   if (mainCake.style.display === 'none') {
     mainCake.style.display = 'block';
     mainCake.style.zIndex = 2000;
   } else {
-    mainCake.style.display = 'none';
-  }
-});
-
-cross.addEventListener('click', function () {
-  // console.log(cross.innerHTML);
-  if (mainCake.style.display === 'block') {
     mainCake.style.display = 'none';
   }
 });
@@ -35,11 +38,6 @@ chocolateCake.addEventListener('click', function () {
   } else {
     chocoCake.style.display = 'none';
   }
-});
-btnDanger.addEventListener('click', function () {
-  // console.log(btnDanger.innerHTML);
-  chocoCake.style.display = 'none';
-  mainCake.style.display = 'block';
 });
 
 let fruitDriedCake = document.querySelector('#fruit-cake');
@@ -62,4 +60,30 @@ snackDiv.addEventListener('click', function () {
   } else {
     snackForm.style.display = 'none';
   }
+});
+
+let cross = document.querySelectorAll('.danger');
+
+cross.forEach((btn) => {
+  btn.addEventListener('click', function () {
+    // console.log(btn.parentElement);
+
+    // btn.parentElement.style.display = 'none';
+    if (mainCake.style.display === 'block') {
+      mainCake.style.display = 'none';
+      // mainCake.style.zIndex = -1000;
+    }
+    else if (chocoCake.style.display === 'block') {
+      chocoCake.style.display = 'none';
+      mainCake.style.display = 'block';
+    }
+    else if (fruitCake.style.display === 'block') {
+      fruitCake.style.display = 'none';
+      // fruitCake.style.zIndex = -2000;
+      mainCake.style.display = 'block';
+    }
+    else if(snackForm.style.display==='block'){
+      snackForm.style.display='none';
+    }
+  });
 });
