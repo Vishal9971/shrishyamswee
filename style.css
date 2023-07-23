@@ -170,8 +170,9 @@ body {
         }
         .cake-h2 {
           padding: 30px;
-          padding-left: 80px;
-          padding-right: 80px;
+          margin: auto;
+          width: 80%;
+          /* text-align: justify; */
           font-size: 28px;
         }
         .cake-div {
@@ -261,6 +262,31 @@ body {
     display: block;
   }
 }
+.ourSpecaility {
+  text-align: center;
+  background-color: beige;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .banarasiImg {
+    height: 300px;
+    width: 300px;
+    margin: 20px auto;
+  }
+  .banarasih2 {
+    font-size: 32px;
+  }
+  .banarasih1 {
+    font-size: 38px;
+    text-decoration: underline;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .specailPara {
+    width: 80%;
+    margin: 50px auto;
+    font-size: 20px;
+  }
+}
+
 .section-4 {
   width: 100vw;
   height: 90vh;
@@ -344,6 +370,7 @@ body {
   #drag-menu {
     top: 30px;
   }
+
   #contact-us {
     height: 40vh;
     width: 300px;
@@ -378,6 +405,9 @@ body {
   }
   #header-list-a {
     font-size: 8px;
+  }
+  #banarasiImg {
+    width: 250px;
   }
   #contact-us {
     height: 40vh;
