@@ -51,6 +51,17 @@ fruitDriedCake.addEventListener('click', function () {
   }
 });
 
+let mixCake = document.querySelector('#mix-cake');
+let mixCakeDiv = document.querySelector('#mixCake-div');
+mixCake.addEventListener('click', function () {
+  if (mixCakeDiv.style.display === 'none') {
+    mixCakeDiv.style.display = 'block';
+    mixCakeDiv.style.zIndex = 2000;
+  } else {
+    mixCakeDiv.style.display = 'none';
+  }
+});
+
 let snackDiv = document.querySelector('.sk-div');
 let snackForm = document.querySelector('#snack-div-form');
 snackDiv.addEventListener('click', function () {
@@ -59,6 +70,17 @@ snackDiv.addEventListener('click', function () {
     snackForm.style.zIndex = 2000;
   } else {
     snackForm.style.display = 'none';
+  }
+});
+
+let sweetsDiv = document.querySelector('.st-div');
+let sweetsForm = document.querySelector('#sweets-div-form');
+sweetsDiv.addEventListener('click', function () {
+  if (sweetsForm.style.display === 'none') {
+    sweetsForm.style.display = 'block';
+    sweetsForm.style.zIndex = 2000;
+  } else {
+    sweetsForm.style.display = 'none';
   }
 });
 
@@ -72,18 +94,20 @@ cross.forEach((btn) => {
     if (mainCake.style.display === 'block') {
       mainCake.style.display = 'none';
       // mainCake.style.zIndex = -1000;
-    }
-    else if (chocoCake.style.display === 'block') {
+    } else if (chocoCake.style.display === 'block') {
       chocoCake.style.display = 'none';
       mainCake.style.display = 'block';
-    }
-    else if (fruitCake.style.display === 'block') {
+    } else if (fruitCake.style.display === 'block') {
       fruitCake.style.display = 'none';
       // fruitCake.style.zIndex = -2000;
       mainCake.style.display = 'block';
-    }
-    else if(snackForm.style.display==='block'){
-      snackForm.style.display='none';
+    } else if (mixCakeDiv.style.display === 'block') {
+      mixCakeDiv.style.display = 'none';
+      mainCake.style.display = 'block';
+    } else if (snackForm.style.display === 'block') {
+      snackForm.style.display = 'none';
+    } else if (sweetsForm.style.display === 'block') {
+      sweetsForm.style.display = 'none';
     }
   });
 });
