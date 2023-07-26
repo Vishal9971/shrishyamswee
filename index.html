@@ -22,6 +22,7 @@
       <div id="header-id" class="header" onLoad="backgroundChanger()">
         <div id="section-1" class="section-1">
           <img id="img-01" class="img-01" src="/images/logo.jpg" alt="" />
+          <!-- <img id="pureVeg" src="/images/" alt=""> -->
           <div class="items">
             <ul id="ul-list" class="ul-list">
               <li id="list-item" class="list-item">
@@ -93,7 +94,7 @@
               </div>
             </a>
             <a class="a-menu">
-              <div id="hover-menu-img" class="img-menu" style="background-image: url(/images/img-2.jpg)">
+              <div id="hover-menu-img" class="img-menu st-div" style="background-image: url(/images/img-2.jpg)">
                 <div class="square">
                   <h3 class="menu-h2-01">Sweets</h3>
                 </div>
@@ -108,11 +109,11 @@
             </a>
           </div>
         </div>
-        <form id="cake-div-form" action="" style="display: none">
+        <form id="cake-div-form" class="formChanges" action="" style="display: none">
           <div id="cake" class="cake">
             <button id="cross" class="danger cross">X</button>
             <h2 class="cake-h2">
-              Cakes available on order. Place your order 3-hours before your celebration and get the cake delivered at
+              Cakes available on order. Place your order 3 hours before your celebration and get the cake delivered at
               your doorstep.
             </h2>
 
@@ -130,14 +131,14 @@
                 <img src="/images/cake-28.jpg" alt="" id="cake-img" class="cake-img" />
                 <h2>Cup-Cakes & Brownies</h2>
               </div>
-              <div class="cake-div-img">
+              <div id="mix-cake" class="cake-div-img">
                 <img src="/images/cake-7.jpg" alt="" id="cake-img" class="cake-img" />
                 <h2>Mixed-flavoured Cakes</h2>
               </div>
             </div>
           </div>
         </form>
-        <form id="chocolateCake-div" class="chocolateCake-div Cake-div" action="" style="display: none">
+        <form id="chocolateCake-div" class="chocolateCake-div Cake-div formChanges" action="" style="display: none">
           <button id="cross" class="danger cross">X</button>
           <img id="img-cake-01" class="img-cake-01" src="/images/cake-1.jpg" alt="" />
           <img id="img-cake-01" class="img-cake-01" src="/images/cake-2.jpg" alt="" />
@@ -150,7 +151,7 @@
           <img id="img-cake-01" class="img-cake-01" src="/images/cake-11.jpg" alt="" />
           <img id="img-cake-01" class="img-cake-01" src="/images/cake-15.jpg" alt="" />
         </form>
-        <form id="fruitCake-div" class="fruitCake-div Cake-div" action="" style="display: none">
+        <form id="fruitCake-div" class="fruitCake-div Cake-div formChanges" action="" style="display: none">
           <button id="cross" class="danger cross">X</button>
           <img id="img-cake-01" class="img-cake-01" src="/images/cake-9.jpg" alt="" />
           <img id="img-cake-01" class="img-cake-01" src="/images/cake-10.jpg" alt="" />
@@ -165,8 +166,19 @@
           <img id="img-cake-01" class="img-cake-01" src="/images/cake-25.jpg" alt="" />
           <img id="img-cake-01" class="img-cake-01" src="/images/cake-26.jpg" alt="" />
         </form>
+        <form id="mixCake-div" class="mixCake-div Cake-div formChanges" action="" style="display: none">
+          <button id="cross" class="danger cross">X</button>
+          <img id="img-cake-01" class="img-cake-01" src="/images/cake-29.jpg" alt="" />
+          <img id="img-cake-01" class="img-cake-01" src="/images/cake-30.jpg" alt="" />
+          <img id="img-cake-01" class="img-cake-01" src="/images/cake-31.jpg" alt="" />
+          <img id="img-cake-01" class="img-cake-01" src="/images/cake-32.jpg" alt="" />
+          <img id="img-cake-01" class="img-cake-01" src="/images/cake-33.jpg" alt="" />
+          <img id="img-cake-01" class="img-cake-01" src="/images/cake-34.jpg" alt="" />
+          <img id="img-cake-01" class="img-cake-01" src="/images/cake-35.jpg" alt="" />
+          <img id="img-cake-01" class="img-cake-01" src="/images/cake-36.jpg" alt="" />
+        </form>
 
-        <form id="snack-div-form" action="" style="display: none">
+        <form id="snack-div-form" class="formChanges" action="" style="display: none">
           <div id="snack" class="snack">
             <button id="cross" class="danger cross">X</button>
             <div class="snack-div">
@@ -207,6 +219,22 @@
                 <h2>Grilled Sandwich</h2>
               </div>
             </div>
+              <div class="snack-div-img">
+                <img src="/images/banarasi.jpg" alt="" class="snack-img" />
+                <h2>Banarasi Saand</h2>
+              </div>
+            </div>
+          </div>
+        </form>
+        <form id="sweets-div-form" class="formChanges" action="" style="display: none">
+          <div id="sweets" class="sweets">
+            <button id="cross" class="danger cross">X</button>
+            <div class="sweets-div">
+              <div class="sweets-div-img">
+                <img src="/images/sweet-1.jpg" alt="" class="sweets-img" />
+                <h2>Kalakand</h2>
+              </div>
+            </div>
           </div>
         </form>
       </div>
@@ -222,7 +250,7 @@
           Our delicious chaat combines delectable combination of spicy chhole, crispy kachori, and our special chutney
           which is a perfect blend of sweet, tangy, and nutty flavors, mixed with fresh fruits and dried fruits which
           makes harmonious blend of flavors and textures that make this chaat irresistible. "Spice up your
-          flavours now 😋
+          flavours now 😋"
         </p>
       </div>
       <div id="section-4" class="section-4">
@@ -237,6 +265,7 @@
               ><i class="fa-brands fa-instagram" style="color: #000000"></i
             ></a>
             <a href=""><i class="fa-brands fa-facebook" style="color: #000000"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp" style="color: #000000;"></i></a>
           </div>
         </div>
       </div>
