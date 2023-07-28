@@ -20,6 +20,10 @@ body {
         height: 10vh;
         border-radius: 50%;
       }
+      #pureVeg {
+        height: 30px;
+        width: 30px;
+      }
       .ul-list {
         display: flex;
         list-style: none;
@@ -143,7 +147,7 @@ body {
         }
       }
     }
-    #cake-div-form {
+    #cake-div-form, #mixCake-div {
       align-items: center;
       justify-content: center;
       position: absolute;
@@ -328,7 +332,7 @@ body {
   height: 90vh;
   background: linear-gradient(rgba(253, 76, 53, 0.9), rgba(242, 67, 36, 0.8)), url(/images/hero-img.jpg);
   .contact-us {
-    height: 40vh;
+    height: 50vh;
     width: 400px;
     background-color: white;
     display: block;
@@ -347,6 +351,10 @@ body {
     }
     .icon {
       cursor: pointer;
+      padding-top: 10px;
+      .icon-img {
+        padding-right: 10px;
+      }
     }
   }
 }
@@ -445,12 +453,16 @@ body {
   #header-list-a {
     font-size: 8px;
   }
-  /* .formChanges{
-    top: 500px !important;
+  /* .formChanges {
+    top: 330% !important;
   } */
   /* #sweets-div-form{
     top:250px;
   } */
+  #pureVeg {
+    height: 20px !important;
+    width: 20px !important;
+  }
   #banarasiImg {
     width: 250px;
   }
