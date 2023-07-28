@@ -62,6 +62,17 @@ mixCake.addEventListener('click', function () {
   }
 });
 
+let cupCake = document.querySelector('#cup-cake');
+let cupCakeDiv = document.querySelector('#cupCake-div');
+cupCake.addEventListener('click', function () {
+  if (cupCakeDiv.style.display === 'none') {
+    cupCakeDiv.style.display = 'block';
+    cupCakeDiv.style.zIndex = 2000;
+  } else {
+    cupCakeDiv.style.display = 'none';
+  }
+});
+
 let snackDiv = document.querySelector('.sk-div');
 let snackForm = document.querySelector('#snack-div-form');
 snackDiv.addEventListener('click', function () {
@@ -104,10 +115,14 @@ cross.forEach((btn) => {
     } else if (mixCakeDiv.style.display === 'block') {
       mixCakeDiv.style.display = 'none';
       mainCake.style.display = 'block';
+    } else if (cupCakeDiv.style.display === 'block') {
+      cupCakeDiv.style.display = 'none';
+      mainCake.style.display = 'block';
     } else if (snackForm.style.display === 'block') {
       snackForm.style.display = 'none';
     } else if (sweetsForm.style.display === 'block') {
       sweetsForm.style.display = 'none';
     }
+
   });
 });
