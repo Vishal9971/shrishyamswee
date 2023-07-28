@@ -141,6 +141,8 @@ body {
     width: 100vw;
     min-height: 90vh !important;
     background: linear-gradient(rgba(244, 218, 112, 0.9), rgba(204, 218, 118, 0.8)), url(/images/background-img-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
     text-align: center;
     margin: 0px;
     .drag-menu {
@@ -337,77 +339,105 @@ body {
     position: relative;
     bottom: 280px;
   }
-}
 
-#hover-menu-img:hover {
-  background-image: linear-gradient(rgba(244, 218, 112, 0.9), rgba(244, 218, 118, 0.8)), url(/images/cake-1.jpg);
-  .square {
-    display: block;
-  }
-}
-.ourSpecaility {
-  text-align: center;
-  background-color: beige;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  .banarasiDiv {
-    background-color: white;
-    width: 70%;
-    margin: auto;
-    padding: 10px;
-  }
-  .banarasiImg {
-    height: 300px;
-    width: 300px;
-    margin: 20px auto;
-  }
-  .banarasih2 {
-    font-size: 32px;
-  }
-  .banarasih1 {
-    font-size: 38px;
-    text-decoration: underline;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  .specailPara {
-    width: 90%;
-    margin: 50px auto;
-    font-size: 20px;
-  }
-  .giftsPara {
-    width: 70%;
-    margin: 5px auto;
-    font-size: 22px;
-  }
-}
-
-.section-4 {
-  width: 100vw;
-  height: 90vh;
-  background: linear-gradient(rgba(253, 76, 53, 0.9), rgba(242, 67, 36, 0.8)), url(/images/hero-img.jpg);
-  .contact-us {
-    height: 50vh;
-    width: 400px;
-    background-color: white;
-    display: block;
-    position: relative;
-    left: 20vw;
-    top: 15vh;
-    .contact-h2 {
-      padding: 10%;
-      padding-bottom: 7%;
-      font-size: 30px;
+  #hover-menu-img:hover {
+    background-image: linear-gradient(rgba(244, 218, 112, 0.9), rgba(244, 218, 118, 0.8)), url(/images/cake-1.jpg);
+    .square {
+      display: block;
     }
-    .contact-p {
-      padding-left: 10%;
-      padding-bottom: 2%;
+  }
+  .ourSpecaility {
+    text-align: center;
+    background: linear-gradient(rgba(71, 7, 7, 0.5), rgba(13, 21, 170, 0.8)), url(/images/background-img-1.jpg);
+    background-repeat: no-repeat;
+    min-height: 40vh;
+    background-size: 100vw 180vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .banarasiDiv {
+      background-color: rgb(230, 188, 188);
+      width: 70%;
+      margin: auto;
+      padding: 10px;
+    }
+    .banarasiImg {
+      height: 300px;
+      width: 300px;
+      margin: 20px auto;
+    }
+    .banarasih2 {
+      font-size: 35px;
+      padding-bottom: 20px;
+      color: rgb(255, 255, 255);
+    }
+    .banarasih1 {
+      font-size: 38px;
+      text-decoration: underline;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .specailPara {
+      width: 90%;
+      margin: 50px auto;
+      font-size: 20px;
+    }
+    .giftHampersDiv {
+      background-color: rgb(230, 188, 188);
+      width: 70%;
+      margin: auto;
+      padding: 10px;
+    }
+    .giftsPara {
+      width: 90%;
+      margin: 5px auto;
       font-size: 22px;
     }
-    .icon {
-      cursor: pointer;
-      padding-top: 10px;
-      .icon-img {
-        padding-right: 10px;
+  }
+  .rateUs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    .imgGoogleDiv {
+      .imgGoogle {
+        width: 300px;
+        height: 100px;
+      }
+    }
+    .rating {
+      .rateGoogle {
+        color: rgb(0, 0, 0);
+        font-size: 26px;
+      }
+    }
+  }
+  .section-4 {
+    width: 100vw;
+    height: 90vh;
+    background: linear-gradient(rgba(253, 76, 53, 0.9), rgba(242, 67, 36, 0.8)), url(/images/hero-img.jpg);
+    .contact-us {
+      height: 50vh;
+      width: 400px;
+      background-color: white;
+      display: block;
+      position: relative;
+      left: 20vw;
+      top: 15vh;
+      .contact-h2 {
+        padding: 10%;
+        padding-bottom: 7%;
+        font-size: 30px;
+      }
+      .contact-p {
+        padding-left: 10%;
+        padding-bottom: 2%;
+        font-size: 22px;
+      }
+      .icon {
+        cursor: pointer;
+        padding-top: 10px;
+        .icon-img {
+          padding-right: 10px;
+        }
       }
     }
   }
