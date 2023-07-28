@@ -134,7 +134,7 @@ cross.forEach((btn) => {
       cupCakeDiv.style.display = 'none';
       mainCake.style.display = 'block';
     } else if (bakeryForm.style.display === 'block') {
-      bakeryForm.style.display === 'none';
+      bakeryForm.style.display = 'none';
     } else if (snackForm.style.display === 'block') {
       snackForm.style.display = 'none';
     } else if (sweetsForm.style.display === 'block') {
