@@ -418,10 +418,12 @@ body {
 .cake-header {
   .section-cake {
     width: 70vw;
-    height: 70vmin;
+    min-height: 70vmin;
     margin: 4vh auto;
     background-color: rgba(241, 240, 240, 0.7);
     display: grid;
+    display: flex;
+    flex-wrap: wrap;
     grid-template-columns: repeat(4, 1fr);
     /* grid-template-rows: repeat(2, 1fr); */
     .cake-img {
