@@ -84,6 +84,16 @@ snackDiv.addEventListener('click', function () {
   }
 });
 
+let bakeryDiv = document.querySelector('.bk-div');
+let bakeryForm = document.querySelector('#bakery-div-form');
+bakeryDiv.addEventListener('click', function () {
+  if (bakeryForm.style.display === 'none') {
+    bakeryForm.style.display = 'block';
+    bakeryForm.style.zIndex = 2000;
+  } else {
+    bakeryForm.style.display = 'none';
+  }
+});
 let sweetsDiv = document.querySelector('.st-div');
 let sweetsForm = document.querySelector('#sweets-div-form');
 sweetsDiv.addEventListener('click', function () {
@@ -94,23 +104,28 @@ sweetsDiv.addEventListener('click', function () {
     sweetsForm.style.display = 'none';
   }
 });
+let healthDiv = document.querySelector('.ht-div');
+let healthForm = document.querySelector('#health-div-form');
+healthDiv.addEventListener('click', function () {
+  if (healthForm.style.display === 'none') {
+    healthForm.style.display = 'block';
+    healthForm.style.zIndex = 2000;
+  } else {
+    healthForm.style.display = 'none';
+  }
+});
 
 let cross = document.querySelectorAll('.danger');
 
 cross.forEach((btn) => {
   btn.addEventListener('click', function () {
-    // console.log(btn.parentElement);
-
-    // btn.parentElement.style.display = 'none';
     if (mainCake.style.display === 'block') {
       mainCake.style.display = 'none';
-      // mainCake.style.zIndex = -1000;
     } else if (chocoCake.style.display === 'block') {
       chocoCake.style.display = 'none';
       mainCake.style.display = 'block';
     } else if (fruitCake.style.display === 'block') {
       fruitCake.style.display = 'none';
-      // fruitCake.style.zIndex = -2000;
       mainCake.style.display = 'block';
     } else if (mixCakeDiv.style.display === 'block') {
       mixCakeDiv.style.display = 'none';
@@ -118,11 +133,14 @@ cross.forEach((btn) => {
     } else if (cupCakeDiv.style.display === 'block') {
       cupCakeDiv.style.display = 'none';
       mainCake.style.display = 'block';
+    } else if (bakeryForm.style.display === 'block') {
+      bakeryForm.style.display === 'none';
     } else if (snackForm.style.display === 'block') {
       snackForm.style.display = 'none';
     } else if (sweetsForm.style.display === 'block') {
       sweetsForm.style.display = 'none';
+    } else if (healthForm.style.display === 'block') {
+      healthForm.style.display = 'none';
     }
-
   });
 });
