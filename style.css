@@ -42,6 +42,46 @@ body {
         }
       }
     }
+    .tagLogo {
+      margin: 100px auto;
+      .h1Logo {
+        color: white;
+        font-size: 7rem;
+        text-align: center;
+        padding: 30px auto;
+      }
+    }
+  }
+  .whatsapp {
+    position: absolute;
+    left: 8%;
+    bottom: 8%;
+    animation-play-state: running;
+    transition: ease-out;
+    animation: rotate 2s infinite alternate;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .whatsapp:hover {
+    cursor: pointer;
+    animation: none;
+  }
+
+  .whatsapp-logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 50%;
+    /* Add more styles as needed */
   }
   .section-2 {
     text-align: center;
@@ -147,7 +187,8 @@ body {
         }
       }
     }
-    #cake-div-form, #mixCake-div {
+    #cake-div-form,
+    #mixCake-div {
       align-items: center;
       justify-content: center;
       position: absolute;
@@ -230,7 +271,9 @@ body {
       }
     }
   }
-  #sweets-div-form {
+  #sweets-div-form,
+  #health-div-form,
+  #bakery-div-form {
     position: absolute;
     top: 190%;
     left: 10%;
@@ -452,6 +495,9 @@ body {
   }
   #header-list-a {
     font-size: 8px;
+  }
+  #h1Logo {
+    font-size: 6rem;
   }
   /* .formChanges {
     top: 330% !important;
